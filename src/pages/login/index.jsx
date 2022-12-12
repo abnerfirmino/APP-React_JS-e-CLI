@@ -1,5 +1,7 @@
 import { MdMailOutline, MdLockOutline } from 'react-icons/md'
 
+import { useNavigate } from "react-router-dom";
+
 import { Header } from '../../components/Header';
 
 import { Button } from '../../components/Button';
@@ -9,6 +11,13 @@ import { Input } from '../../components/Input';
 import { Column, Container, CreateText, ForgotText, Row, SubtitleLogin, Title, TitleLogin, Wrapper } from './styles';
 
 const Login = () => {
+
+    const navigate = useNavigate();
+
+    const handleClickSignIn = () => {
+        navigate('/feed')
+    }
+
     return (<>
         <Header/>
         <Container>
@@ -25,7 +34,7 @@ const Login = () => {
                     <form>
                         <Input placeholder="E-mail" leftIcon={<MdMailOutline/>}/>
                         <Input placeholder="Senha" type="password" leftIcon={<MdLockOutline/>}/>
-                        <Button title="Entrar" variant="secondary"/>
+                        <Button title="Entrar" variant="secondary" onClick={handleClickSignIn} type="button"/>
                     </form>
                     <Row>
                         <ForgotText>Esqueci minha senha</ForgotText>
