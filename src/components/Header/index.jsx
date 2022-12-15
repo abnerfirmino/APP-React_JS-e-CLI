@@ -1,5 +1,7 @@
 import React from "react"
 import logo from '../../assets/logo-dio.png'
+import avatarImage from "../../assets/avatar.png";
+
 import { Button } from '../Button'
 import {
     SearchInputContainer,
@@ -30,7 +32,7 @@ const Header = ({authenticated}) => {
                 </Row>
                 <Row>
                     {authenticated ? (
-                        <UserPicture src="https://avatars.githubusercontent.com/u/45184516?v=4" />
+                        <UserPicture src={avatarImage} />
                     ) : (
                         <>
                             <MenuRight href="#">Home</MenuRight>
