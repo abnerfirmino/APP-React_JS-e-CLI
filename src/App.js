@@ -1,5 +1,3 @@
-// Configurando as duas rotas
-
 import {
   BrowserRouter as Router,
   Routes,
