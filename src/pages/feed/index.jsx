@@ -4,6 +4,8 @@ import { UserInfo } from "../../components/UserInfo";
 
 import { Header } from "../../components/Header";
 
+import avatarImage from "../../assets/avatar.png";
+
 import { Container, Column, Title, TitleHighlight } from "./styles";
 
 const Feed = () => {
@@ -28,22 +30,22 @@ const Feed = () => {
           <TitleHighlight> # RANKING 5 TOP DA SEMANA </TitleHighlight>
           <UserInfo
             nome="Abner Firmino"
-            image="https://avatars.githubusercontent.com/u/45184516?v="
+            image={avatarImage}
             percentual={25}
           />
           <UserInfo
             nome="Abner Firmino"
-            image="https://avatars.githubusercontent.com/u/45184516?v="
+            image={avatarImage}
             percentual={65}
           />
           <UserInfo
             nome="Abner Firmino"
-            image="https://avatars.githubusercontent.com/u/45184516?v="
+            image={avatarImage}
             percentual={45}
           />
           <UserInfo
             nome="Abner Firmino"
-            image="https://avatars.githubusercontent.com/u/45184516?v="
+            image={avatarImage}
             percentual={72}
           />
         </Column>
