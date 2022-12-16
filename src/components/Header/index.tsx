@@ -2,6 +2,8 @@ import React from "react"
 import logo from '../../assets/logo-dio.png'
 import avatarImage from "../../assets/avatar.png";
 
+import { IHeader } from "./types";
+
 import { Button } from '../Button'
 import {
     SearchInputContainer,
@@ -14,7 +16,7 @@ import {
     UserPicture,
 } from './styles'
 
-const Header = ({authenticated}) => {
+const Header = ({authenticated}: IHeader) => {
     return (
         <Wrapper>
             <Container>
